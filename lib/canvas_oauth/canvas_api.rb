@@ -151,6 +151,10 @@ module CanvasOauth
       paginated_get "/api/v1/sections/#{section_id}/enrollments"
     end
 
+    def get_course_enrollments(course_id) 
+      paginated_get "/api/v1/courses/#{course_id}/enrollments"
+    end
+    
     def get_user_enrollments(user_id)
       paginated_get "/api/v1/users/#{user_id}/enrollments"
     end
